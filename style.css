@@ -1,0 +1,422 @@
+:root{
+    --OpenSans: 'Open Sans', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+
+
+    /* ## Colors */
+
+    /* ### Primary */
+
+    --Pink: hsl(322, 100%, 66%);
+
+    /* ### Neutral */
+
+    --VeryPaleCyan: hsl(193, 100%, 96%);
+    --VeryDarkCyan: hsl(192, 100%, 9%);
+    --GrayishBlue: hsl(208, 11%, 55%);
+}
+
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,p{
+    font-family: var(--OpenSans);
+    color: var(--GrayishBlue);
+}
+h4{
+    font-family: var(--Poppins);
+    color: var(--VeryDarkCyan);
+}
+
+main{
+    display: flex;
+    width: 100%;
+}
+
+.container{
+    width: 88%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 0 auto;
+}
+
+
+/* Universal style */
+.btn{
+    border: 0;
+    padding: 10px 35px;
+    border-radius: 50px;
+    font-size: small;
+
+}
+
+
+/* Header Area Style */
+
+.logo_hero{
+    background-image: url(./images/bg-hero-desktop.svg);
+    background-size: cover;
+}
+
+.logo_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+.logo_section img{
+    height: 20px;
+}
+.logo_section .btn{
+    background: rgb(255, 255, 255);
+    box-shadow: 1px 0px 20px rgba(255, 145, 145, 0.295);
+    
+}
+
+.hero_section{
+    padding: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.hero_section  .left{
+    width: 50%;
+    padding-right: 50px;
+}
+.hero_section .left h4{
+    font-size: 32px;
+    font-weight: 700;
+}
+.hero_section .left p{
+    font-size: 18px;
+    padding: 20px 0;
+    
+}
+.hero_section .left .btn{
+    background: var(--Pink);
+    color: white;
+}
+.hero_section  .right{
+    width: 50%;
+}
+.hero_section  .right img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+
+/* Body Area Article style */
+
+.first_article{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 0 10px rgba(181, 141, 255, 0.404);
+    margin: 30px 0;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+.second_article{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 0 10px rgba(181, 141, 255, 0.404);
+    margin: 30px 0;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+.third_article{
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 0 10px rgba(181, 141, 255, 0.404);
+    margin: 30px 0;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+}
+.text_area{
+
+    width: 50%;
+}
+.text_area h4{
+    font-size: 22px;
+}
+.text_area p{
+    padding-top: 15px;
+    font-size: 14px;
+}
+.img_area{
+    width: 50%;
+    text-align: center;
+}
+.img_area img{
+    
+    width: 400px;
+    height: 100%;
+}
+
+
+/* subscribe_card area */
+
+.subscribe_card{
+    width: 400px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 450px;
+    box-shadow: 1px 0 20px rgba(148, 63, 245, 0.438);
+}
+.card .btn{
+    background: var(--Pink);
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Footer area style */
+
+.main_footer{
+    display: flex;
+    width: 100%;
+    padding: 50px 20px;
+    background: var(--VeryDarkCyan);
+    color: white;
+}
+.main_footer p{
+    font-size: 14px;
+}
+
+.footer_side1{
+    width: 35%;
+    
+}
+.footer_side1 img{
+    background: #ffffff;
+    
+}
+.location{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.location svg{
+    fill: #ffffff;
+}
+.location p{
+    padding-left: 20px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.phone svg{
+    fill: #ffffff;
+}
+.phone p{
+    padding-left: 20px;
+}
+.gmail svg{
+    fill: #ffffff;
+}
+.gmail{
+    display: flex;
+    align-items: center;
+}.gmail p{
+    padding-left: 20px;
+}
+
+
+
+
+.footer_side2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+.footer_side2 .link1{
+    margin-right: 40px;
+}
+.footer_side2 .link1 ul li{
+    padding: 8px 0;
+    
+}
+.footer_side2 .link1 ul li a{
+    text-decoration: none;
+    color: #ffffff;  
+}
+.footer_side2 .link2 ul li a{
+    text-decoration: none;
+    color: #ffffff;  
+}
+
+.footer_side2 .link2 ul li{
+    padding: 8px 0;
+}
+
+
+
+.footer_side3{
+    width: 25%;
+    display: flex;
+    align-items: center;
+
+}
+.footer_side3 svg{
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+    margin-right: 10px;
+}
+
+footer p{
+    text-align: center;
+    padding: 20px;
+    background: var(--VeryDarkCyan);
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width:768px) {
+    /* hero */
+
+    .logo_hero{
+        background-image: url(./images/bg-hero-mobile.svg);
+        background-size: cover;
+
+    }
+    .hero_section{
+        padding: 0px 0px;
+        display: block;
+        width: 100%;
+    }
+    .hero_section  .left{
+        width: 100%;
+        padding-right: 0;
+    }
+    .hero_section .left h4{
+        text-align: center;
+        font-size: 24px;
+
+    }
+    .hero_section .left p{
+        font-size: 14px;
+        text-align: center;
+        
+    }
+    .hero_section .left .btn{
+        width: 100%;
+    }
+    .hero_section  .right{
+        width: 100%;
+    }
+
+    
+
+    
+/* Body Area Article style */
+
+.first_article{
+    display: block;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+.second_article{
+    display: block;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+.third_article{
+    display: block;
+    margin: 30px 0;
+    padding: 20px;
+    text-align: center;
+}
+.text_area{
+    width: 100%;
+}
+
+.img_area{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img_area img{
+    padding: 20px;
+    width: 200px;
+    height: 100%;
+    
+}
+
+
+
+
+/* subscribe_card area */
+
+.subscribe_card{
+    width: 270px;
+    padding: 10px 0;
+    top: 30px;
+    left: 13px;
+}
+.card h4{
+    font-size: 14px;
+}
+
+
+
+
+
+/* Footer area style */
+
+.main_footer{
+    display: block;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.footer_side1{
+    width: 100%;
+    padding-top: 100px;
+    
+}
+
+
+
+.footer_side2{
+    display: block;
+    width: 100%;
+}
+.footer_side2 .link1{
+    margin-right: 0px;
+}
+
+
+.footer_side3{
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.footer_side3 svg{
+    width: 30px;
+    height: 30px;
+}
+
+}
